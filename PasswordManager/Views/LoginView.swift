@@ -18,8 +18,18 @@ struct LoginView: View {
                 //header
                 HeaderView(title: "My Password Vault", angle: 15, background: .yellow)
                 
+                
+             
+                
                 //loginform
                 Form{
+                    
+                    if  !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
+                    }
+                    
+                    
                     TextField("Email Address", text: $viewModel.email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .autocapitalization(.none)
@@ -27,7 +37,7 @@ struct LoginView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     PMButton(title: "Login", background:.black){
-                        
+                        viewModel.login()
                     }
                     .padding()
                 }

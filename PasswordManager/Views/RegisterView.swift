@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
-    
-    @State var name = ""
-    @State var email = ""
-    @State var password = ""
+ 
     
     
     
