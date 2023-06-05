@@ -34,6 +34,7 @@
 		A6E576692A2D96D0008B76EE /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E576682A2D96D0008B76EE /* RegisterViewViewModel.swift */; };
 		A6E5766B2A2D96EA008B76EE /* PasswordItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E5766A2A2D96EA008B76EE /* PasswordItemViewViewModel.swift */; };
 		A6E5766D2A2D9BA6008B76EE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E5766C2A2D9BA6008B76EE /* HeaderView.swift */; };
+		A6E5766F2A2DB8C2008B76EE /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E5766E2A2DB8C2008B76EE /* PMButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		A6E576682A2D96D0008B76EE /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		A6E5766A2A2D96EA008B76EE /* PasswordItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordItemViewViewModel.swift; sourceTree = "<group>"; };
 		A6E5766C2A2D9BA6008B76EE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A6E5766E2A2DB8C2008B76EE /* PMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				A6E576542A2D9580008B76EE /* RegisterView.swift */,
 				A6E576562A2D95D3008B76EE /* PasswordItemView.swift */,
 				A6E5766C2A2D9BA6008B76EE /* HeaderView.swift */,
+				A6E5766E2A2DB8C2008B76EE /* PMButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				A6E576592A2D9605008B76EE /* User.swift in Sources */,
 				A6E5764F2A2D9547008B76EE /* PasswordView.swift in Sources */,
 				A6E576672A2D96C1008B76EE /* LoginViewViewModel.swift in Sources */,
+				A6E5766F2A2DB8C2008B76EE /* PMButton.swift in Sources */,
 				A6E576572A2D95D3008B76EE /* PasswordItemView.swift in Sources */,
 				A6E5765B2A2D9612008B76EE /* Password.swift in Sources */,
 				A6E576512A2D9566008B76EE /* NewItemView.swift in Sources */,

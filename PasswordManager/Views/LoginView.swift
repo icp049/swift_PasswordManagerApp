@@ -10,58 +10,50 @@ import SwiftUI
 struct LoginView: View {
     
     
-    @State var email = ""
-    @State var password = ""
-    
+@StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         NavigationView{
             VStack{
                 //header
-                HeaderView()
+                HeaderView(title: "My Password Vault", angle: 15, background: .yellow)
                 
                 //loginform
                 Form{
-                    TextField("Email Address", text: $email)
+                    TextField("Email Address", text: $viewModel.email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                    SecureField("Password", text: $password)
+                        .autocapitalization(.none)
+                    SecureField("Password", text: $viewModel.password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    Button{
-                        //attempt login
+                    PMButton(title: "Login", background:.black){
                         
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color.black)
-                            
-                            Text("Login")
-                                .foregroundColor(Color.white)
-                                .bold()
-                        }
                     }
+                    .padding()
                 }
-                
-                //button
-                
-                
-                //create account
-                
-                VStack{
+                .offset (y: -50)
                     
-                    Text("Don't Have an Account?")
-                    NavigationLink("Create an Account", destination: RegisterView())
+                    //button
+                    
+                    
+                    //create account
+                    
+                    VStack{
+                        
+                        Text("Don't Have an Account?")
+                        NavigationLink("Create an Account", destination: RegisterView())
+                    }
+                    .padding(.bottom, 50)
+                    
+                    Spacer()
                 }
-                .padding(.bottom, 50)
-                
-                Spacer()
             }
         }
     }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
+    
+    struct LoginView_Previews: PreviewProvider {
+        static var previews: some View {
+            LoginView()
+        }
     }
-}
+

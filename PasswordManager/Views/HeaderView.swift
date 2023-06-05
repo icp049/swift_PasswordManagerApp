@@ -8,30 +8,38 @@
 import SwiftUI
 
 struct HeaderView: View {
+    
+    let title: String
+    let angle: Double
+    let background: Color
+    
+    
+    
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 0)
-                .foregroundColor(Color.yellow)
-                .rotationEffect(Angle(degrees: 15))
+                .foregroundColor(background)
+                .rotationEffect(Angle(degrees: angle))
                 
             
             VStack{
-                Text("My Password Vault")
+                Text(title)
                     .font(.system(size: 20))
                     .foregroundColor(Color.white)
                     .bold()
                 
                 
             }
-            .padding(.top,40)
+            .padding(.top,70)
         }
         .frame(width: UIScreen.main.bounds.width * 3, height: 300)
-        .offset(y: -100)
+        .offset(y: -150)
             }
 }
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView()
+        HeaderView(title: "My Password Vault", angle: 15, background: .yellow)
     }
 }
