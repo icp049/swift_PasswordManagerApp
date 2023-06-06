@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+
+class NewitemViewViewModel: ObservableObject{
+    
+    @Published var title = ""
+    
+    
+    init() {}
+    
+    func save(){
+        
+    }
+    
+}

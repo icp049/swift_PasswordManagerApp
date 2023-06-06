@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class PasswordViewViewModel: ObservableObject{
+    
+    
+    @Published  var showingNewItemView = false
+    init() {}
+    
+}

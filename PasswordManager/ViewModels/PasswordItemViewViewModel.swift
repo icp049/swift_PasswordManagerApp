@@ -6,3 +6,9 @@
 //
 
 import Foundation
+// item
+class PasswordItemViewViewModel: ObservableObject{
+    
+    init() {}
+    
+}
