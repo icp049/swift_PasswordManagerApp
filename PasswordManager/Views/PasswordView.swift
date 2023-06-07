@@ -12,14 +12,16 @@ struct PasswordView: View {
     
     
     @StateObject var  viewModel = PasswordViewViewModel()
-    @Binding var newItemPresented: Bool
+   
     
     private let userId: String
     
-    init(userId:String ){
+    init(userId:String){
         self.userId = userId
-        
     }
+    
+    
+
     
     
     
@@ -36,14 +38,14 @@ struct PasswordView: View {
                     Image(systemName: "plus")
                 }
             }
-            .sheet(isPresented: $viewModel.showingNewItemView) {
-                NewItemView(newItemPresented:$viewModel.showingNewItemView)
+            .sheet(isPresented: $viewModel.showingNewItemView){
+                NewItemView(newItemPresented: $viewModel.showingNewItemView)
             }
         }
         
-        
+      }
     }
-}
+
 
 struct PasswordView_Previews: PreviewProvider {
     static var previews: some View {

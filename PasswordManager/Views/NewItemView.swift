@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct NewItemView: View {
-    @StateObject var viewModel = NewitemViewViewModel()
     
+    @StateObject var viewModel = NewItemViewViewModel()
+    @Binding  var newItemPresented: Bool
     
     
     var body: some View {
@@ -22,15 +23,26 @@ struct NewItemView: View {
             Form {
                 TextField("Title", text: $viewModel.title)
                     .textFieldStyle(DefaultTextFieldStyle())
-                //Button
+                TextField("Username/Email", text: $viewModel.user)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                TextField("Password", text: $viewModel.password)
+                    .textFieldStyle(DefaultTextFieldStyle())                //Button
                 
                 PMButton(title: "Add",
                          background: .pink) {
-                    viewModel.save()
+                    if viewModel.canSave {
+                        viewModel.save()
+                        newItemPresented = false
+                    } else {
+                        viewModel.showAlert = true
+                    }
+                    
                 }
                          .padding()
             }
-           
+            .alert(isPresented: $viewModel.showAlert){
+                Alert(title: Text("Error"), message: Text("Please fill in all fields"))
+            }
             }
         }
     }
