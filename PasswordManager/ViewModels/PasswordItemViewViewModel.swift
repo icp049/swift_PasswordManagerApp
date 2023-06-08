@@ -11,4 +11,8 @@ class PasswordItemViewViewModel: ObservableObject{
     
     init() {}
     
+    
+    func toggleIsDone(){
+        
+    }
 }

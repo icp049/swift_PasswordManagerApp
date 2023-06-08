@@ -36,6 +36,9 @@
 		A6E5766D2A2D9BA6008B76EE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E5766C2A2D9BA6008B76EE /* HeaderView.swift */; };
 		A6E5766F2A2DB8C2008B76EE /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E5766E2A2DB8C2008B76EE /* PMButton.swift */; };
 		A6E576712A2F0774008B76EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E576702A2F0774008B76EE /* Extensions.swift */; };
+		A6E576732A3159D4008B76EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E576722A3159D4008B76EE /* LaunchScreen.storyboard */; };
+		A6E576752A3161FF008B76EE /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E576742A3161FF008B76EE /* EditView.swift */; };
+		A6E576772A31624E008B76EE /* EditViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E576762A31624E008B76EE /* EditViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		A6E5766C2A2D9BA6008B76EE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		A6E5766E2A2DB8C2008B76EE /* PMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
 		A6E576702A2F0774008B76EE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A6E576722A3159D4008B76EE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6E576742A3161FF008B76EE /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		A6E576762A31624E008B76EE /* EditViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,7 @@
 				A6E576562A2D95D3008B76EE /* PasswordItemView.swift */,
 				A6E5766C2A2D9BA6008B76EE /* HeaderView.swift */,
 				A6E5766E2A2DB8C2008B76EE /* PMButton.swift */,
+				A6E576742A3161FF008B76EE /* EditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +205,7 @@
 				A6E576662A2D96C1008B76EE /* LoginViewViewModel.swift */,
 				A6E576682A2D96D0008B76EE /* RegisterViewViewModel.swift */,
 				A6E5766A2A2D96EA008B76EE /* PasswordItemViewViewModel.swift */,
+				A6E576762A31624E008B76EE /* EditViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 				A6E576462A2D9081008B76EE /* GoogleService-Info.plist */,
 				A6E576192A2D8DFA008B76EE /* Assets.xcassets */,
 				A6E576702A2F0774008B76EE /* Extensions.swift */,
+				A6E576722A3159D4008B76EE /* LaunchScreen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -335,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6E5761D2A2D8DFA008B76EE /* Preview Assets.xcassets in Resources */,
+				A6E576732A3159D4008B76EE /* LaunchScreen.storyboard in Resources */,
 				A6E5761A2A2D8DFA008B76EE /* Assets.xcassets in Resources */,
 				A6E576472A2D9082008B76EE /* GoogleService-Info.plist in Resources */,
 			);
@@ -372,6 +382,8 @@
 				A6E5766B2A2D96EA008B76EE /* PasswordItemViewViewModel.swift in Sources */,
 				A6E576162A2D8DF8008B76EE /* PasswordManagerApp.swift in Sources */,
 				A6E576632A2D9694008B76EE /* PasswordViewViewModel.swift in Sources */,
+				A6E576772A31624E008B76EE /* EditViewViewModel.swift in Sources */,
+				A6E576752A3161FF008B76EE /* EditView.swift in Sources */,
 				A6E576592A2D9605008B76EE /* User.swift in Sources */,
 				A6E5764F2A2D9547008B76EE /* PasswordView.swift in Sources */,
 				A6E576672A2D96C1008B76EE /* LoginViewViewModel.swift in Sources */,

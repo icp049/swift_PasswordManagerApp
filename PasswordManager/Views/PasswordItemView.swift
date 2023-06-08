@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct PasswordItemView: View {
+    let item: PasswordItem
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            VStack(alignment: .leading){
+                Text(item.title)
+                    .font(.body)
+                    .bold()
+                Text(item.user)
+                Text(item.pass)
+            }
+            
+            Spacer()
+            
+            
+        }
     }
-}
-
-struct PasswordItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        PasswordItemView()
+    
+    struct PasswordItemView_Previews: PreviewProvider {
+        static var previews: some View {
+            PasswordItemView(item: .init(
+                id: "123",
+                title: "facebook",
+                user: "ianpepe",
+                pass: "hahaha123",
+                isDone: true
+                
+            ))
+        }
     }
 }
